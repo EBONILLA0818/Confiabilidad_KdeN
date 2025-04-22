@@ -1,2 +1,2 @@
 Flask
-streamlit==1.33.0
+streamlit
