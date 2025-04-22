@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confiabilidad K de N</title>
+</head>
+<body>
+    <h1>Calculadora de Confiabilidad de Sistemas K de N</h1>
+    <form method="POST">
+        <label>Introduce las tasas de falla (separadas por coma):</label><br>
+        <input type="text" name="tasas" required><br><br>
+
+        <label>Valor de K:</label><br>
+        <input type="number" name="k" required><br><br>
+
+        <label>Tiempo (t):</label><br>
+        <input type="number" name="t" step="any" required><br><br>
+
+        <button type="submit">Calcular</button>
+    </form>
+
+    {% if resultado is not none %}
+        <h2>Confiabilidad del sistema: {{ resultado }}</h2>
+    {% endif %}
+</body>
+</html>
